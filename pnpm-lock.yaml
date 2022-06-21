@@ -203,7 +203,7 @@ importers:
     specifiers:
       '@rollup/plugin-replace': ^4.0.0
       '@types/d3': ^7.4.0
-      '@vitejs/plugin-vue': ^2.3.3
+      '@vitejs/plugin-vue': 3.0.0-beta.0
       '@vueuse/core': ^8.7.5
       autoprefixer: ^10.4.7
       d3-drag: ^3.0.0
@@ -217,9 +217,9 @@ importers:
       typedoc: ^0.22.17
       typescript-transform-paths: ^3.3.1
       unplugin-auto-import: ^0.9.0
-      vite: ^2.9.10
+      vite: 3.0.0-beta.2
       vite-plugin-vue-type-imports: ^0.2.0
-      vite-svg-loader: ^3.3.0
+      vite-svg-loader: ^3.4.0
       vue-tsc: ^0.38.1
     dependencies:
       '@vueuse/core': 8.7.5_vue@3.2.37
@@ -229,7 +229,7 @@ importers:
     devDependencies:
       '@rollup/plugin-replace': 4.0.0_rollup@2.75.6
       '@types/d3': 7.4.0
-      '@vitejs/plugin-vue': 2.3.3_vite@2.9.10+vue@3.2.37
+      '@vitejs/plugin-vue': 3.0.0-beta.0_rygeznqqb23s3dco2gmne6jfdm
       autoprefixer: 10.4.7_postcss@8.4.14
       np: 7.6.1
       postcss: 8.4.14
@@ -238,10 +238,10 @@ importers:
       ts-patch: 2.0.1_typescript@4.7.3
       typedoc: 0.22.17_typescript@4.7.3
       typescript-transform-paths: 3.3.1_typescript@4.7.3
-      unplugin-auto-import: 0.9.0_gieuh5fsa53rimmmwzrmuhelrq
-      vite: 2.9.10
+      unplugin-auto-import: 0.9.1_uzsasbrb4242p6xwgxplmtgxse
+      vite: 3.0.0-beta.2
       vite-plugin-vue-type-imports: 0.2.0_2yymnzrok6eda47acnj2yjm3ae
-      vite-svg-loader: 3.3.0
+      vite-svg-loader: 3.4.0
       vue-tsc: 0.38.1_typescript@4.7.3
 
 packages:
@@ -3042,6 +3042,17 @@ packages:
       vue: ^3.2.25
     dependencies:
       vite: 2.9.10
+      vue: 3.2.37
+    dev: true
+
+  /@vitejs/plugin-vue/3.0.0-beta.0_rygeznqqb23s3dco2gmne6jfdm:
+    resolution: {integrity: sha512-t8os1QK1qpovpgYAJSOWYEu+Doy/DZRW1cNwMvUl0qo+Yv7D9a3cxo24oL01lbojcc9ABQhyvUP3BsvFNtriqg==}
+    engines: {node: '>=14.18.0'}
+    peerDependencies:
+      vite: ^3.0.0-alpha
+      vue: ^3.2.25
+    dependencies:
+      vite: 3.0.0-beta.2
       vue: 3.2.37
     dev: true
 
@@ -9048,7 +9059,7 @@ packages:
     resolution: {integrity: sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA==}
     dependencies:
       hosted-git-info: 2.8.9
-      resolve: 1.22.0
+      resolve: 1.22.1
       semver: 5.7.1
       validate-npm-package-license: 3.0.4
     dev: true
@@ -10519,7 +10530,7 @@ packages:
     resolution: {integrity: sha512-HFM8rkZ+i3zrV+4LQjwQ0W+ez98pApMGM3HUrN04j3CqzPOzl9nmP15Y8YXNm8QHGv/eacOVEjqhmWpkRV0NAw==}
     engines: {node: '>= 0.10'}
     dependencies:
-      resolve: 1.22.0
+      resolve: 1.22.1
     dev: true
 
   /redent/3.0.0:
@@ -10667,6 +10678,15 @@ packages:
 
   /resolve/1.22.0:
     resolution: {integrity: sha512-Hhtrw0nLeSrFQ7phPp4OOcVjLPIeMnRlr5mcnVuMe7M/7eBn98A3hmFRLoFo3DLZkivSYwhRUJTyPyWAk56WLw==}
+    hasBin: true
+    dependencies:
+      is-core-module: 2.9.0
+      path-parse: 1.0.7
+      supports-preserve-symlinks-flag: 1.0.0
+    dev: true
+
+  /resolve/1.22.1:
+    resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}
     hasBin: true
     dependencies:
       is-core-module: 2.9.0
@@ -11135,6 +11155,7 @@ packages:
 
   /stable/0.1.8:
     resolution: {integrity: sha512-ji9qxRnOVfcuLDySj9qzhGSEFVobyt1kIOSkj1qZzYLzq7Tos/oUUWvotUPQLlrsidqsK6tBH89Bc9kL5zHA6w==}
+    deprecated: 'Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility'
     dev: true
 
   /standard-as-callback/2.1.0:
@@ -11516,7 +11537,7 @@ packages:
     dev: true
 
   /to-fast-properties/2.0.0:
-    resolution: {integrity: sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=}
+    resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
 
   /to-readable-stream/1.0.0:
@@ -11968,8 +11989,8 @@ packages:
       - webpack
     dev: true
 
-  /unimport/0.3.0_rollup@2.75.6+vite@2.9.10:
-    resolution: {integrity: sha512-RxvfvKBY+CyBmIuYSuBeosSiudgcVakdhVofy5mO5sJ3purQRc5yjLw0Lir7MKHnqe6XT1++8flgAvpxu1UkqQ==}
+  /unimport/0.4.0_s5f4t5ue4rnf44mgvb7h4vxgve:
+    resolution: {integrity: sha512-k2KgvR/rvpmOln5vJtgbikfnntV3nG2F4mRrAI+16cA0KgANaPqHwVrdJijWbW4ZLDmSt0xzCfy4MJt8bMel0w==}
     dependencies:
       '@rollup/pluginutils': 4.2.1
       escape-string-regexp: 5.0.0
@@ -11980,7 +12001,7 @@ packages:
       pathe: 0.3.0
       scule: 0.2.1
       strip-literal: 0.4.0
-      unplugin: 0.7.0_rollup@2.75.6+vite@2.9.10
+      unplugin: 0.7.0_s5f4t5ue4rnf44mgvb7h4vxgve
     transitivePeerDependencies:
       - esbuild
       - rollup
@@ -12100,8 +12121,8 @@ packages:
       - webpack
     dev: true
 
-  /unplugin-auto-import/0.9.0_gieuh5fsa53rimmmwzrmuhelrq:
-    resolution: {integrity: sha512-6h32xuwfpXQwXN9lAZtEDbb8rNGdBn/zg/H8HoXHtnm63t67zL2NDLxb0S3rJugKrQdhHhxaLgckN3gB36TnXw==}
+  /unplugin-auto-import/0.9.1_uzsasbrb4242p6xwgxplmtgxse:
+    resolution: {integrity: sha512-U2LGVl7nlVIGGV86Gr4x9JS5R2Vag43CGDiOebcCqQ1FPV/r8pdQ9yIZVbBj/v6xk3px/vE1zePC9z/WZgKmXg==}
     engines: {node: '>=14'}
     peerDependencies:
       '@vueuse/core': '*'
@@ -12114,8 +12135,8 @@ packages:
       '@vueuse/core': 8.7.5_vue@3.2.37
       local-pkg: 0.4.1
       magic-string: 0.26.2
-      unimport: 0.3.0_rollup@2.75.6+vite@2.9.10
-      unplugin: 0.7.0_rollup@2.75.6+vite@2.9.10
+      unimport: 0.4.0_s5f4t5ue4rnf44mgvb7h4vxgve
+      unplugin: 0.7.0_s5f4t5ue4rnf44mgvb7h4vxgve
     transitivePeerDependencies:
       - esbuild
       - rollup
@@ -12304,7 +12325,7 @@ packages:
       webpack-virtual-modules: 0.4.3
     dev: true
 
-  /unplugin/0.7.0_rollup@2.75.6+vite@2.9.10:
+  /unplugin/0.7.0_s5f4t5ue4rnf44mgvb7h4vxgve:
     resolution: {integrity: sha512-OsiFrgybmqm5bGuaodvbLYhqUrvGuRHRMZDhddKEXTDbuQ1x+hR7M1WpQguXj03whVYjEYChhFo738cZH5RNig==}
     peerDependencies:
       esbuild: '>=0.13'
@@ -12324,7 +12345,7 @@ packages:
       acorn: 8.7.1
       chokidar: 3.5.3
       rollup: 2.75.6
-      vite: 2.9.10
+      vite: 3.0.0-beta.2
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.4.3
     dev: true
@@ -12550,6 +12571,13 @@ packages:
       svgo: 2.8.0
     dev: true
 
+  /vite-svg-loader/3.4.0:
+    resolution: {integrity: sha512-xD3yb1FX+f4l9/TmsYIqyki8ncpcVsZ2gEJFh/wLuNNqt55C8OJ+JlcMWOA/Z9gRA+ylV/TA1wmJLxzZkCRqlA==}
+    dependencies:
+      '@vue/compiler-sfc': 3.2.37
+      svgo: 2.8.0
+    dev: true
+
   /vite/2.5.10:
     resolution: {integrity: sha512-0ObiHTi5AHyXdJcvZ67HMsDgVpjT5RehvVKv6+Q0jFZ7zDI28PF5zK9mYz2avxdA+4iJMdwCz6wnGNnn4WX5Gg==}
     engines: {node: '>=12.2.0'}
@@ -12608,6 +12636,33 @@ packages:
       resolve: 1.22.0
       rollup: 2.75.6
       sass: 1.32.12
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
+  /vite/3.0.0-beta.2:
+    resolution: {integrity: sha512-fJb/br8eZok65sjvskRyC26ZJ1iDHk8prgD+1L3LpEOJ8G/QOqKA3mBLkdEghp6jYqFOMJuBePkzFGgEYU6jzw==}
+    engines: {node: '>=14.18.0'}
+    hasBin: true
+    peerDependencies:
+      less: '*'
+      sass: '*'
+      stylus: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      esbuild: 0.14.43
+      postcss: 8.4.14
+      resolve: 1.22.1
+      rollup: 2.75.6
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
